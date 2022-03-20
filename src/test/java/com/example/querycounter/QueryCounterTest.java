@@ -48,7 +48,7 @@ public class QueryCounterTest {
     void N_Plus_1_Problem() {
         counter.startQueryCount();
 
-        List<String> userPostContentsList = userService.getAllPostContents(1L);
+        List<String> userPostContentsList = userService.getAllPostContents();
 
         assertThat(userPostContentsList).hasSize(10);
         assertThat(counter.getQueryCount()).isEqualTo(11);

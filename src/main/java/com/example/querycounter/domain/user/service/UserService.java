@@ -20,7 +20,7 @@ public class UserService {
         this.userRepository = userRepository;
     }
 
-    public List<String> getAllPostContents(Long userId) {
+    public List<String> getAllPostContents() {
         return userRepository.findAll()
                 .stream()
                 .map(User::getPosts)
