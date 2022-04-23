@@ -25,15 +25,14 @@ public class Counter {
     }
 
     public void printQueryCount() {
-        int cnt = this.count;
-        clearCount();
+        System.out.println("ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ");
+        System.out.println("Query Count : " + this.count + "번");
+        System.out.println("ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ");
 
-        System.out.println("ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ");
-        System.out.println("Query Count : " + cnt + "번");
-        System.out.println("ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ");
+        clearQueryCount();
     }
 
-    public void clearCount() {
+    public void clearQueryCount() {
         this.flag = false;
         this.count = 0;
     }
