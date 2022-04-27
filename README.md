@@ -1,11 +1,12 @@
 # QueryCounter
 - JPA Query counter with dynamic proxy
 - Implemented to count the number of queries occurring in JPA
+- [QueryCounter Post](https://yeongkeedev.tistory.com/13) 
 
 <br>
 
 ## Usage
-**1. Specify the path to the entity in the entity manager.**
+**1. Specify the path to the Entity in the EntityManager.**
 ```java
 /config/QueryCounterConfig.java
 
